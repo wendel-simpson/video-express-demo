@@ -1,0 +1,383 @@
+/* this file is loaded by index.html and styles the page */
+* {
+  box-sizing: border-box;
+  color: rgb(37, 35, 35);
+}
+
+html {
+  height: 100%;
+  background-color: #dde9e2;
+}
+
+body {
+  font-family: acumin-pro, sans-serif;
+  font-weight: 700;
+  /* margin: 2em 1em; */
+  line-height: 1.5em;
+  /* min-width: 600px; */
+  margin: 0px;
+}
+
+header {
+  background-color: #dde9e2;
+  padding: 0.4em;
+  padding-bottom: 0.4em;
+  font-size: 2.5em;
+  display: flex;
+  justify-content: flex-start;
+  align-content: center;
+  -webkit-box-shadow: 0px 1px 1px #ddd;
+  -moz-box-shadow: 0px 1px 1px #ddd;
+  box-shadow: 0px 2px 2px #ddd;
+}
+
+.title {
+  width: 100%;
+  text-align: center;
+}
+
+/* Assuming the name of the PreviewPublisher's container is previewContainer */
+#previewContainer {
+  font-size: 1.2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #dde9e2;
+}
+
+/* Assuming the name of the Room's container is roomContainer */
+#roomContainer {
+  width: 100%;
+  height: calc(100vh - 12.65rem);
+  min-height: 200px;
+  background-color: rgb(37, 35, 35);
+  position: relative;
+  display: flex;
+  flex-direction: row-reverse;
+  padding-bottom: 0.6rem;
+}
+
+select {
+  width: 50%;
+  overflow: hidden;
+}
+
+#Layer_1 {
+  width: 2.5em;
+  fill: #ffb04d;
+}
+
+#roomContainer > .OT_publisher {
+  position: relative;
+}
+
+#VEcontainer {
+  display: block;
+}
+
+#mySection {
+  width: 100%;
+}
+
+#select-devices {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 3rem;
+  margin-right: 3rem;
+}
+
+#permissionDenied {
+  display: none;
+}
+
+#myPreviewVideo,
+#myVideo {
+  border-radius: 4px;
+  overflow: hidden;
+  margin-top: 1rem;
+}
+
+.source {
+  margin-top: 0.8rem;
+}
+
+.name-viewer {
+  display: flex;
+  justify-content: flex-start;
+  column-gap: 1rem;
+  margin-top: 0.8rem;
+}
+
+#logo {
+  width: 100px;
+  height: 100%;
+}
+
+.controls {
+  display: flex;
+  height: 6.5rem;
+  justify-content: space-between;
+  padding: 0.8rem;
+  background-color: #383837;
+  padding-top: 0.6rem;
+  padding-bottom: 0.6rem;
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+}
+
+.myVideoContainer {
+  padding: 1rem;
+  align-self: flex-end;
+  /* border-left: 0.2rem solid #ddd; */
+}
+
+.layout {
+  background-color: rgb(37, 35, 35);
+  display: flex;
+  justify-content: flex-end;
+  /* padding-right: 0.4em; */
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+}
+
+.myVideo-text {
+  color: #ddd;
+  font-size: 1.2rem;
+  padding-bottom: 0.3rem;
+  text-align: center;
+  display: none;
+}
+
+.OT_publisher {
+  width: 10 px;
+}
+
+.OT_video-poster {
+  background-image: none;
+}
+
+#layoutContainerWrapper {
+  border: 4px solid #ffaf4d5d;
+  border-radius: 4px;
+}
+
+/* Button Stylings */
+
+button {
+  cursor: pointer;
+  border-radius: 16px;
+  opacity: 80%;
+  font-family: acumin-pro, sans-serif;
+  font-size: 1.2rem;
+  word-wrap: break-word;
+  width: 8.5rem;
+  background-color: rgb(18, 18, 18);
+  color: white;
+  font-weight: 600;
+  border: 0.1rem solid #ffb04d;
+}
+
+button:hover {
+  background-color: rgba(18, 18, 18, 0.852);
+}
+
+button:disabled,
+button[disabled] {
+  border: 1px solid #999999;
+  background-color: #cccccc;
+  color: #666666;
+  cursor: not-allowed;
+}
+
+.preview-buttons {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+.toggle-button {
+  font-size: 2.7rem;
+  text-align: center;
+  text-justify: center;
+  border-radius: 100%;
+  width: 5rem;
+  height: 5rem;
+  border: 0.1rem solid #ffb04d;
+}
+
+.off {
+  background-color: rgb(203, 93, 93);
+}
+
+.off:hover {
+  background-color: rgb(171, 73, 73);
+}
+
+#screenshareStopButton {
+  display: none;
+  background-color: rgb(203, 93, 93);
+}
+
+#screenshareStopButton:hover {
+  background-color: rgb(171, 73, 73);
+}
+
+#previewSelection {
+  margin-right: 1rem;
+}
+
+#leaveButton {
+  letter-spacing: 0.2rem;
+  font-size: 2rem;
+}
+
+#layoutButton {
+  position: relative;
+}
+
+#layoutStatus {
+  position: absolute;
+  top: 20rem;
+  color: white;
+}
+
+/* Dropdown layout menu */
+.dropbtn {
+  background-color: rgb(37, 35, 35);
+  color: white;
+  padding: 0.4rem;
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 0rem;
+  width: 10rem;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 10rem;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  text-align: center;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  font-size: 1.1rem;
+  padding: 0.4rem 0.2rem;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: #ffaf4d;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {
+  background-color: #383837;
+}
+
+.active {
+  background-color: #ffaf4d92;
+}
+
+/* Media queries for a responsive layout */
+
+@media screen and (max-width: 800px) {
+  body {
+    font-size: 70%;
+  }
+  #myVideo {
+    display: none;
+  }
+
+  #myScreenshare {
+    display: none;
+  }
+
+  .myVideoContainer {
+    display: none;
+  }
+}
+
+@media screen and (max-height: 500px) {
+  body {
+    font-size: 70%;
+  }
+  #myVideo {
+    display: none;
+  }
+  #roomContainer {
+    height: calc(100vh - 11.6rem);
+  }
+  .myVideoContainer {
+    display: none;
+  }
+}
+
+@media screen and (max-height: 720px) {
+  #myScreenshare {
+    display: none;
+  }
+  #roomContainer {
+    height: calc(100vh - 12.65rem);
+  }
+}
+
+@media screen and (max-width: 500px) {
+  body {
+    font-size: 45%;
+  }
+  #myVideo {
+    display: none;
+  }
+
+  #myScreenshare {
+    display: none;
+  }
+
+  #roomContainer {
+    height: calc(100vh - 10.8rem);
+  }
+
+  .myVideoContainer {
+    display: none;
+  }
+
+  #screenshareStartButton {
+    font-size: 1rem;
+  }
+
+  .toggle-button {
+    font-size: 2rem;
+    width: 4.5rem;
+    height: 4.5rem;
+    align-self: center;
+  }
+
+  #leaveButton {
+    letter-spacing: 0.1rem;
+    font-size: 1.2rem;
+  }
+
+  button {
+    width: 6rem;
+  }
+}
